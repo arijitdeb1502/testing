@@ -1,4 +1,4 @@
-@SanityTestCurr
+@SanityTest2
 Feature: Events Per Group Page Body header3 Featues
   Scenario: Validate the header3 feature of body
     Given User is on the "https://webuildsg.github.io/data/dataset/events-per-group/" page to validate Page Body header Featues 

@@ -1,4 +1,4 @@
-@SanityTestCurr
+@SanityTest2
 Feature: Event Vs Grp Page header features
 	Scenario: Validate header 
 	Given User moves on to the "https://webuildsg.github.io/data/dataset/events-per-group/" page for validating header
