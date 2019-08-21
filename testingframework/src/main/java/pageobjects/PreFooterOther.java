@@ -16,26 +16,31 @@ public class PreFooterOther {
 	By paraElements=By.cssSelector("div[class='info']");
 	By paraElem=By.cssSelector("p");
 	By unOrderedListItems=By.cssSelector("ul");
-	By anchorElem=By.cssSelector("a");
+	By anchorElems=By.cssSelector("ul > li > a");
+	
 	
 	public PreFooterOther(WebDriver driver) {
 		this.driver = driver;
 	}
 	
-//	public List<WebElement> getAnchorELementsFromPreFooter(){
-//		
-//		List<WebElement> aElements=new ArrayList<WebElement>();
-//		List<WebElement> lists=getContainerClassElements();
-//		
-//		
-//		for (WebElement elem:lists) {
-//		
-//			aElements.add(elem.findElement(anchorElem));	
-//			
-//		}
-//		
-//		return aElements;
-//	}
+	public List<WebElement> getAnchorELementsFromPreFooter(){
+		
+		List<WebElement> aElements=new ArrayList<WebElement>();
+		List<WebElement> lists=getExplainClassElements();
+		
+		
+		for (WebElement elem:lists) {
+			
+			List<WebElement> anchors=elem.findElements(anchorElems);
+
+			for(WebElement anchor:anchors) {
+				aElements.add(anchor);
+			}
+			
+		}
+		
+		return aElements;
+	}
 	
 	public List<WebElement> getExplainClassParaLements(){
 		
