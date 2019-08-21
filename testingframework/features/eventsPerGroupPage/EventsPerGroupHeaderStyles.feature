@@ -1,4 +1,4 @@
-@SanityTest2
+@SanityTest
 Feature: Events Per Group header styles features
 	Scenario: Validate header styles 
 	Given User moves on to the "https://webuildsg.github.io/data/dataset/events-per-group/" page for validating header styles

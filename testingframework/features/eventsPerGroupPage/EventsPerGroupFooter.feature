@@ -1,4 +1,4 @@
-@SanityTest2
+@SanityTest
 Feature: DataPage footer features
 	Scenario: Validate footer 
 	Given User moves on to the "https://webuildsg.github.io/data/dataset/events-per-group/" page for validating footer

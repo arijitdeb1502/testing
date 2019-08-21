@@ -1,4 +1,4 @@
-@SanityTest2
+@SanityTest
 Feature: Events Per Group pre footer feature
   Scenario: Validate the number of event per group statistics as displayed
     Given User is on the "https://webuildsg.github.io/data/dataset/events-per-group/" page to validate pre footer container features
