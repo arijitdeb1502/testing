@@ -3,6 +3,7 @@ package stepdefinitions;
 import java.util.List;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import cucumber.api.java.en.Given;
@@ -82,9 +83,16 @@ public class EventsPerGroupPreFooterStepDefinitions extends Base {
 	}
 	
 	@Then("^validate that following text in pre footer are linktext$")
-	public void validate_that_following_text_in_pre_footer_are_linktext(List<FooterLinks> data) throws Throwable {
+	public void validate_that_following_text_in_pre_footer_are_linktext(List<FooterLinks> expData) throws Throwable {
 	
-		System.out.println("Not Yet Implemented!!");
+		PreFooterOther preFootOth= new PreFooterOther(driver);
+		int index=0;
+		
+		for(WebElement anchor:preFootOth.getAnchorELementsFromPreFooter()) {
+			
+			Assert.assertEquals(anchor.getText(),expData.get(index++).getLinkText());		
+			
+		}
 		
 	}
 

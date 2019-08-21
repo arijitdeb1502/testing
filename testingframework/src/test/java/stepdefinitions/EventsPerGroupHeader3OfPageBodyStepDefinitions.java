@@ -44,7 +44,7 @@ public class EventsPerGroupHeader3OfPageBodyStepDefinitions extends Base {
 	@Then("^validate that the h elelemnt font family is \"([^\"]*)\"$")
 	public void validate_that_the_h_elelemnt_font_family_is(String expectedFontFamily) throws Throwable {
 		EventsPerGroupPage ePgrPage = new EventsPerGroupPage(driver);
-		Assert.assertEquals(expectedFontFamily,ePgrPage.getHeader3Elem().getCssValue("font-family"));
+		Assert.assertEquals(expectedFontFamily,ePgrPage.getHeader3Elem().getCssValue("font-family").replace("\"", ""));
 	}
 
 	@Then("^close the browser after validating the header feature of body$")
