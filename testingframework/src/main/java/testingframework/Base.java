@@ -25,10 +25,11 @@ public class Base {
 		prop.load(fis);
 		
 		String browserName=prop.getProperty("browser");
+		String chromeDriverLocation=prop.getProperty("chromeDriverLocation");
 		
 		if(browserName.equals("Chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver", "D:\\driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", chromeDriverLocation);
 			driver=new ChromeDriver();
 			
 		}else if(browserName.equals("Firefox")) {
