@@ -48,3 +48,7 @@ C.) Test Run Report Details:
 
     "testingframework\target\site\cucumber-pretty\index.html"
 
+################################################
+Framework Used
+################################################
+Cucumber , BDD with TestNg assertions have been used to build this framework which follows "Page Object Model" design pattern.
