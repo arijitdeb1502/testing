@@ -51,4 +51,4 @@ C.) Test Run Report Details:
 ################################################
 Framework Used
 ################################################
-Cucumber , BDD with TestNg assertions have been used to build this framework which follows "Page Object Model" design pattern.
+Cucumber , BDD with Java TestNg assertions have been used to build this framework which follows "Page Object Model" design pattern.
